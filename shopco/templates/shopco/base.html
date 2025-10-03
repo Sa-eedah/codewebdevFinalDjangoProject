@@ -266,10 +266,11 @@
             </div>
     </section>
 
-    <!-- Footer Section -->
-    <section class="footer-section container-two">
-        <div class="blacktwo">
-            <h3>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h3>
+    {% load static %}
+
+    <section class="footer-section">
+        <div class="blacktwo-one">
+            <h3>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h3>
             <div class="email-box">
                 <div>
                     <input type="email" class="email-input" placeholder="Please enter your Email">
@@ -280,72 +281,75 @@
             </div>
         </div>
     </section>
-
-    <footer class="footer-bottom container-one">
-            <div class="column">
-                <a href="{% url 'base' %}"><img src="{% static 'shopco/images/SHOP.CO.png' %}" alt="Shop.Co"></a>
-                <p>We have clothes that suits your style and which you&apos;re proud to wear. From women to men.</p>
-                <div class="social-icons">
-                    <a href="https://x.com/?lang=en-za"><img src="{% static 'shopco/images/twitter.png' %}" alt="twitter"></a>
-                    <a href="https://www.facebook.com/"><img src="{% static 'shopco/images/facebook.png' %}" alt="facebook"></a>
-                    <a href="https://www.instagram.com/"><img src="{% static 'shopco/images/instagram.png' %}" alt="instagram"></a>
-                    <a href="https://github.com/"><img src="{% static 'shopco/images/github.png' %}" alt="github"></a>
-                </div>
-            </div>
-            <div class="column">
-                <h3>COMPANY</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>HELP</h3>
-                <ul>
-                    <li><a href="#">Customer Support</a></li>
-                    <li><a href="#">Delivery Details</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>FAQ</h3>
-                <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Manage Deliveries</a></li>
-                    <li><a href="#">Orders</a></li>
-                    <li><a href="#">Payments</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>RESOURCES</h3>
-                <ul>
-                    <li><a href="#">Free eBooks</a></li>
-                    <li><a href="#">Development Tutorial</a></li>
-                    <li><a href="#">How to - Blog</a></li>
-                    <li><a href="#">Youtube Playlist</a></li>
-                </ul>
+    
+    <footer class="footerbottom-one container-one">
+        <div class="column">
+            <a href="{% url 'base' %}">
+                <img src="{% static 'shopco/images/SHOP.CO.png' %}" alt="Shop.Co">
+            </a>
+            <p>We have clothes that suits your style and which you&apos;re proud to wear. From women to men.</p>
+            <div class="social-icons">
+                <a href="https://x.com/?lang=en-za"><img src="{% static 'shopco/images/twitter.png' %}" alt="twitter"></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'shopco/images/facebook.png' %}" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="{% static 'shopco/images/instagram.png' %}" alt="instagram"></a>
+                <a href="https://github.com/"><img src="{% static 'shopco/images/github.png' %}" alt="github"></a>
             </div>
         </div>
+    
+        <div class="column">
+            <h3>COMPANY</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <h3>HELP</h3>
+            <ul>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <h3>FAQ</h3>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payments</a></li>
+            </ul>
+        </div>
+    
+        <div class="column">
+            <h3>RESOURCES</h3>
+            <ul>
+                <li><a href="#">Free eBooks</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+        </div>
     </footer>
-        <div class="banking">
-            <div class="container-three">
-            
+    
+    <div class="banking">
+        <div class="container-three">
             <p>Shop.co &copy;2000 - 2023. All Rights Reserved</p>
-            
             <div class="bank">
                 <img src="{% static 'shopco/images/visa.png' %}" alt="visa">
                 <img src="{% static 'shopco/images/mastercard.png' %}" alt="mastercard">
                 <img src="{% static 'shopco/images/paypal.png' %}" alt="paypal">
                 <img src="{% static 'shopco/images/applepay.png' %}" alt="applepay">
                 <img src="{% static 'shopco/images/gpay.png' %}" alt="gpay">
-            </div> 
+            </div>
         </div>
-        </div>
+    </div>
     
-
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
